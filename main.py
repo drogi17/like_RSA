@@ -44,7 +44,7 @@ def cripting(e, n, m_str):
     message_int = int(str(message_int) + str(ord(char)) + '000100')
     full_cycles = message_int // n
     c = (message_int ** e) % n
-    return g, c
+    return full_cycles, c
 
 def encripting(c, d, n, g):
     get_m = ((c ** d) % n) + (n*g)
